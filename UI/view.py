@@ -33,11 +33,12 @@ class View:
         self._page.controls.append(row1)
 
         #row2
-        self.ddArtist = ft.Dropdown(label="Artista", width = 250, disabled=True)
-        self.btnArtistsConnected = ft.ElevatedButton(text="Artisti collegati", width = 150, disabled=True, on_click=self._controller.handle_connected_artists )
+        self.ddArtist = ft.Dropdown(label="Artista", width = 250, disabled = True)
+        self.btnArtistsConnected = ft.ElevatedButton(text="Artisti collegati", width = 150, disabled = True, on_click=self._controller.handle_connected_artists )
         row2 = ft.Row([self.ddArtist, self.btnArtistsConnected],
                       alignment=ft.MainAxisAlignment.CENTER)
         self._page.controls.append(row2)
+
 
         #row3
         self.txtMaxArtists = ft.TextField( label="Numero massimo artisti", width=300, disabled=True)
